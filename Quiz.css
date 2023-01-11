@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,100&display=swap');
+
+
+:root{
+    --primary:#ddd;
+    --dark:#333;
+    --light:#fff;
+    --shadow:0 1px 5px rgba(104,104,104,0.8);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+ 
+    color:var(--dark);
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#ccc;
+    margin:30px 50px;    /* set to the full with of the page has only padding of 50 ;eft and right */
+    line-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* design all global buttons */
+.btn{
+    background-color: var(--dark);
+    color:var(--light);
+    padding:0.6rem 1.3rem;
+    text-decoration: none;
+    border:0;
+}
+
+
+
+
+
+.wrapper{
+ 
+    display: grid;
+   
+}
+
+header{
+    margin-bottom:2rem;
+}
+header h1{
+    font-size: 50px;
+    margin-bottom: 2rem;
+}
+header p{
+    text-align: left;
+    padding:1rem 0;
+}
+
+
+.web-container{                       
+    display: grid;
+    grid-template-columns: 2.5fr ;
+    gap:10px;
+    text-align: center;
+    min-height:100vh;
+    
+    
+}
+
+.web-container .web-box{
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    padding:1.5rem 2rem;
+
+    
+}
+
+.answer{
+    margin-right :10px;
+}
+
+.Questionares{
+    margin:2rem 0;
+}
+
+.Questionares .answers{
+   margin-left: 20px;
+}
+
+.Questionares .checkboxes{
+    margin: 0 20px;
+}
+
+
+.Questionares p{
+    text-align: left;
+ 
+}
+
+.btn{
+    cursor: pointer;
+}
+
+#ScoreResults{
+    display: none;
+}
+#results{
+    display: none;
+}
+#textscore{
+    display: none;
+}
+
+#comments{
+    display: none;
+}
+
+@media screen and (max-width: 420px)
+{
+    .web-container{
+        display: grid;
+        grid-template-columns: 1.5fr;
+        
+    }
+
+    .Questionares{
+        margin:2rem 0;
+        display: flex;
+       flex-direction: column;
+       border-bottom: 3 solid gray;
+       border-bottom-style: ridge;
+      
+    }
+    
+    .Questionares .answers{
+       margin:0;
+    }
+    
+    .Questionares .checkboxes{
+        margin: 0;
+    }
+
+    .Questionares .q{
+       margin-bottom:20px;
+    }
+    
+  
+ 
+}
+
+

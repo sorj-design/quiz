@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 Project</title>
+
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+
+
+  <div class="wrapper">    <!--Container-->
+
+    
+
+   <section class="web-container"> <!--display in grid the 3 web-boxes autofit in 1box-->
+
+<!----------------------------------LEFT SIDE-------------------------------------------------------------->
+
+         <div class="web-box">   <!--Left-side-->
+        
+            <header>
+                <h1>Quiz</h1>
+              <h3>INSTRUCTIONS: To test your skills for a "Pay only when you get hired Program"...</h3>
+              <p>To start the Quiz, For each question, there are four answer options – select the BEST one by clicking it. <br>
+                Take note, fill in all the answers and folow the instructions to each question before clicking the submit button.<br> Once your done, a results will be prompted.
+               </header>
+
+    
+             
+   <form name="quiz" id="myForm">
+  
+
+
+    <div class="Questionares">
+
+      <p class="q">How can we create a class that is based on another class?. </p><br>
+      <!-- Enter options for question 2 here -->
+      <input type="radio" name="question1" id="radiocheck"  value="radiocheck" class="checkboxes"> Use class Inhiretance</input>
+      <input type="radio" name="question1"  id="radio" value="radio2"  class="checkboxes "> Use class abstruction</input>
+      <input type="radio" name="question1"  id="radio" value="radio3" class="'checkboxes answer" >Use class extension</input>      
+      <div id="result-question1" class="error">
+      <br>
+      </div>
+   </div>
+
+
+
+
+<div class="Questionares">
+
+<p  class="q">Which event occurs when a user clicks on some element on a website?</p><br>
+<!-- Enter options for question 2 here -->
+<input type="radio" name="question2" id="radio1"  value="radio1" class="checkboxes"> on mouse-over</input>
+<input type="radio" name="question2"  id="radio2" value="radio2"  class="checkboxes ">onclick</input>
+<input type="radio" name="question2"  id="radio3" value="radio3" class="'checkboxes answers" > onchange</input>
+
+<div id="result-question2" class="error">
+<br>
+</div>
+
+</div>
+
+
+
+
+
+<div class="Questionares">
+<p  class="q">Question 3: Which of the following birds can fly? Choose 3 correct answers.</p><br>
+<!-- Enter options for question 3 here -->
+<input type="checkbox" class="checkboxes" value="parrot" name="question3" id="parrot">Parrot</input>
+<input type="checkbox" class="checkboxes" value="Eagle" name="question3" id="eagle" >Eagle</input>
+<input type="checkbox" class="checkboxes" value="penguin" name="question3" id="penguin">Penguin</input>
+<input type="checkbox" class="checkboxes" value="crow" name="question3" id="crow">Crow</input>
+
+
+<div id="result-question3" class="error">
+<br>
+</div>
+
+</div>
+
+
+
+<div class="Questionares">
+<p  class="q">Question 4: Say we have an “Employee” class. How do we declare it? Choose 2 correct answers.</p><br>
+<!-- Enter options for question 3 here -->
+<input type="checkbox" class="checkboxes" value="shark" name="question4" id="shark">let class = new Employee()</input>
+<input type="checkbox" class="checkboxes" value="lion" name="question4" id="lion" >let person = class Employee</input>
+<input type="checkbox" class="checkboxes" value="dolphin" name="question4" id="dolphin">let Employee = new class()</input>
+<input type="checkbox" class="checkboxes" value="tiger" name="question4" id="tiger">class Employee</input>
+
+
+<div id="result-question4" class="error">
+<br>
+</div>
+
+</div>
+
+
+
+
+
+<div class="Questionares">
+
+   <p >Question 5:What does CSS add to an HTML document?This question is required. .</p><br>
+   <!-- Enter options for question 2 here -->
+   <input type="radio" name="question5" id="radio3"  value="radio3" class="checkboxes">Structure</input>
+   <input type="radio" name="question5"  id="radioEverest" value="radio4"  class="checkboxes ">Style</input>
+   <input type="radio" name="question5"  id="radio5" value="radio5" class="'checkboxes answers">Fucntionality</input>
+   
+   <div id="result-question5" class="error">
+   <br>
+   </div>
+   
+   </div>
+   
+
+
+<div class="Q3Container">
+<div class="buttonControl">
+<button type="submit" name="submitBtn" class="btn"> Submit </button>
+<button type="reset" name="resetBtn" class="btn" id="resetbtn"> Reset </button>
+</div>
+
+</div>   
+
+<!--Score results-->
+
+<div id="ScoreResults">Passing scores:4
+        
+   <div id="results"></div>
+   <div id="textscore">Your Scores:</div>
+   <div id="comments"></div>
+</div>
+
+
+
+</div>                  <!-- End of web-box-->
+
+</div>                  <!--End of Web-container-->
+</form>
+    
+ </div>                  <!--End of Left Side-->
+
+
+
+</body>
+<script src="main.js"></script>
+</html>
